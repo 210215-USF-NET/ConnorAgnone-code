@@ -1,0 +1,12 @@
+using ToHModels;
+using ToHDL;
+using System;
+using System.Collections.Generic;
+namespace ToHBL
+{
+    public interface IHeroBL
+    {
+        List<Hero> GetHeroes();
+        void AddHero(Hero newHero);
+    }
+}

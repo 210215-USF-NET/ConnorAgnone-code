@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ToHModels\ToHModels.csproj" />
+    <ProjectReference Include="..\ToHBL\ToHBL.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
