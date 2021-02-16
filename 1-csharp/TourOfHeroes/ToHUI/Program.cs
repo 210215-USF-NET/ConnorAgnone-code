@@ -19,7 +19,7 @@ namespace ToHUI
             newSuperPower.Name = Console.ReadLine();
             Console.WriteLine("Enter SuperPower description");
             newSuperPower.Description = Console.ReadLine();
-            Console.WriteLine("Enter SuperPower damage:);
+            Console.WriteLine("Enter SuperPower damage:");
             newSuperPower.Damage = int.Parse(Console.ReadLine());
             Console.WriteLine("Set the element type of the hero: ");
             newHero.ElementType = Enum.Parse<Element>(Console.ReadLine());
