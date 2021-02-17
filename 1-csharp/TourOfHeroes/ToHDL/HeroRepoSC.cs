@@ -9,7 +9,8 @@ namespace ToHDL
         {
             return Storage.AllHeroes;
         }
-        public Hero AddHero(Hero newHero){
+        public Hero AddHero(Hero newHero)
+        {
             Storage.AllHeroes.Add(newHero);
             return newHero;
         }
