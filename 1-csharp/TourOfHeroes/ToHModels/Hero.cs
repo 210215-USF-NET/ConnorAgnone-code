@@ -14,8 +14,9 @@ namespace ToHModels
             get { return heroName; }
             set
             {
-                if (value.Equals(null))
+                if (value == null || value.Equals(""))
                 { //TODO: throw exception 
+                    throw new ArgumentNullException("Hero name can't be empty or null");
                 }
                 heroName = value;
 
