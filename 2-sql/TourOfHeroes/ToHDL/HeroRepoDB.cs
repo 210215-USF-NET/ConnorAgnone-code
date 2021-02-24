@@ -3,6 +3,7 @@ using Model = ToHModels;
 using Entity = ToHDL.Entities;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using ToHModels;
 namespace ToHDL
 {
     public class HeroRepoDB : IHeroRepository
@@ -24,6 +25,10 @@ namespace ToHDL
         public List<Model.Hero> GetHeroes()
         {
             return _context.Heroes.Include("Superpowers").Select(x => _mapper.ParseHero(x)).ToList();
+        }
+                public Hero GetHeroByName(string name)
+        {
+            return _context.Heroes.Include("Superpowers").Select(x => _mapper.ParseHero(x)).ToList().FirstOrDefault(x => x.HeroName == name);
         }
     }
 }
